@@ -9,4 +9,6 @@ class Pokemon
     @name = name
     @description = description
   end  
+  
+  
 end
