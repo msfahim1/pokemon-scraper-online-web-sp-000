@@ -10,5 +10,7 @@ class Pokemon
     @description = description
   end  
   
-  
+  def self.save(id, name, description)
+    db.execute("INSERT INTO pokemon(id, name, description) VALUES (?,?,?)", name, description)
+  end
 end
